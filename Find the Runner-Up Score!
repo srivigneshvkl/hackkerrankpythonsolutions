@@ -1,0 +1,8 @@
+n = int(input())
+arr = sorted(map(int, input().split()))
+t=max(arr)
+p=arr.count(t)
+while p>0:
+    arr.remove(t)
+    p=p-1
+print(arr[-1])
