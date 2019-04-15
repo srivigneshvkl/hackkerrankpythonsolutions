@@ -1,0 +1,10 @@
+a=int(input())
+f={}
+for i in range(0,a):
+    b=input().split(' ')
+    c=b[0]
+    d=list(map(float,b[1:]))
+    e=sum(d)/len(d)
+    f[c]=e
+k=input()
+print('{:.2f}'.format(f[k]))
