@@ -1,0 +1,10 @@
+import numpy as numpy
+n=list(map(float,input().split()))
+a=numpy.array(n)
+b=numpy.floor(a)
+c=numpy.ceil(a)
+d=numpy.rint(a)
+numpy.set_printoptions(legacy='1.13')
+print(b)
+print(c)
+print(d)
