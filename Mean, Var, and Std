@@ -1,0 +1,13 @@
+import numpy
+a,b=input().split()
+c=[]
+for i in range(0,int(a)):
+    c.append(list(map(int,input().split())))
+d=numpy.array(c)
+e=numpy.std(d)
+f=numpy.var(d,axis=0)
+g=numpy.mean(d,axis=1)
+numpy.set_printoptions(legacy='1.13')
+print(g)
+print(f)
+print(e)
